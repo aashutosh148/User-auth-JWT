@@ -4,18 +4,18 @@ This project is a Node.js Express application that implements user authenticatio
 
 ## Table of Contents
 
--   [User Authentication System with JWT](#user-authentication-system-with-jwt)
-    -   [Table of Contents](#table-of-contents)
-    -   [Features](#features)
-    -   [Prerequisites](#prerequisites)
-    -   [Installation](#installation)
-    -   [Configuration](#configuration)
-    -   [Usage](#usage)
-        -   [User Registration](#user-registration)
-        -   [User Login](#user-login)
-        -   [Access Protected Routes](#access-protected-routes)
-        -   [User Logout](#user-logout)
-    -   [Dependencies](#dependencies)
+- [User Authentication System with JWT](#user-authentication-system-with-jwt)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+    - [User Registration](#user-registration)
+    - [User Login](#user-login)
+    - [Access Protected Routes](#access-protected-routes)
+    - [User Logout](#user-logout)
+  - [Dependencies](#dependencies)
 
 ## Features
 
@@ -40,7 +40,7 @@ Before running this project, ensure that you have the following prerequisites in
 Clone the repository and run following cmds:
 
 ```bash
-git clone https://github.com/your-repo/User-auth-JWT.git
+git clone https://github.com/aashutosh148/User-auth-JWT
 cd User-auth-JWT
 npm install
 ```
