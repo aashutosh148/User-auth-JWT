@@ -4,18 +4,18 @@ This project is a Node.js Express application that implements user authenticatio
 
 ## Table of Contents
 
-- [User Authentication System with JWT](#user-authentication-system-with-jwt)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Usage](#usage)
-    - [User Registration](#user-registration)
-    - [User Login](#user-login)
-    - [Access Protected Routes](#access-protected-routes)
-    - [User Logout](#user-logout)
-  - [Dependencies](#dependencies)
+-   [User Authentication System with JWT](#user-authentication-system-with-jwt)
+    -   [Table of Contents](#table-of-contents)
+    -   [Features](#features)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+    -   [Configuration](#configuration)
+    -   [Usage](#usage)
+        -   [User Registration](#user-registration)
+        -   [User Login](#user-login)
+        -   [Access Protected Routes](#access-protected-routes)
+        -   [User Logout](#user-logout)
+    -   [Dependencies](#dependencies)
 
 ## Features
 
@@ -40,8 +40,8 @@ Before running this project, ensure that you have the following prerequisites in
 Clone the repository and run following cmds:
 
 ```bash
-git clone https://github.com/your-repo/user-auth-jwt.git
-cd user-auth-jwt
+git clone https://github.com/your-repo/User-auth-JWT.git
+cd User-auth-JWT
 npm install
 ```
 
@@ -73,13 +73,15 @@ Do not forget to Replace the placeholders with your actual credentials.
 
 To register a new user, send a POST request to `/auth/register` with a JSON payload containing the username and password:
 
-```json
+```
 POST /auth/register
 Content-Type: application/json
+```
 
+```json
 {
-  "username": "your_username",
-  "password": "your_password"
+	"username": "your_username",
+	"password": "your_password"
 }
 ```
 
@@ -89,13 +91,15 @@ If the registration is successful, you should receive a response with a status c
 
 To log in, send a POST request to `/auth/login` with the username and password:
 
-```json
+```
 POST /auth/login
 Content-Type: application/json
+```
 
+```json
 {
-  "username": "your_username",
-  "password": "your_password"
+	"username": "your_username",
+	"password": "your_password"
 }
 ```
 
@@ -131,7 +135,7 @@ If the token is valid, you should receive a response like:
 
 To log out, send a POST request to `/auth/logout` with the Authorization header containing the JWT token:
 
-```json
+```
 POST /auth/logout
 Authorization: Bearer <your_jwt_token>
 ```
